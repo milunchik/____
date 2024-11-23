@@ -1,0 +1,70 @@
+.signupPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.containerPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.signupLeft {
+    background-color: var(--secondary-color);
+    width: 50%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.signupContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.illustrationSection {
+    text-align: center;
+}
+
+.signupRight {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .containerPage {
+        flex-direction: column;
+    }
+
+    .signupLeft,
+    .signupRight {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .illustrationSection {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .signupLeft {
+        padding: 10px;
+    }
+}

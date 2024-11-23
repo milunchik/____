@@ -1,0 +1,141 @@
+.signupWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.formSection {
+    width: 100%;
+    max-width: 680px;
+    padding: 3rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 1rem;
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-color-hove);
+}
+
+.formSection p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--text-color-form);
+}
+
+.teacherLink a,
+.signinLink a {
+    color: var(--background-link);
+    text-decoration: none;
+}
+
+.teacherLink a:hover,
+.signinLink a:hover {
+    color: var(--background-link-hover);
+}
+@media (max-width: 1024px) {
+    .formSection {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input {
+        font-size: 0.95rem;
+        padding: 0.9rem;
+    }
+
+    button {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .formSection p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .formSection {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .formSection p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .formSection {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input {
+        font-size: 0.85rem;
+        padding: 0.7rem;
+    }
+
+    button {
+        padding: 0.7rem;
+        font-size: 0.85rem;
+    }
+
+    .formSection p {
+        font-size: 1.1rem;
+    }
+}

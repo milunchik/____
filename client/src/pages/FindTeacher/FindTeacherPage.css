@@ -1,0 +1,166 @@
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--background-color);
+    flex-wrap: wrap;
+}
+
+.imageForm {
+    width: 35%;
+    height: auto;
+    padding: 5px;
+}
+
+.teachersSection {
+    width: 100%;
+    text-align: center;
+    background-image: url('../../../public/images/bubbles.png');
+    background-size: cover;
+    background-color: var(--background-color);
+    height: 95vh;
+    overflow-y: auto;
+    margin: 0;
+}
+
+.teachersHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.teachersHeader h1 {
+    font-size: 32px;
+    margin-right: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev-button,
+.next-button {
+    background-color: var(--green-details);
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: var(--teacher-title);
+}
+
+.carouselContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    background-color: var(--secondary-input-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.teacherCard {
+    width: 100%;
+}
+
+.teacherImage img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.teacherInfo {
+    margin-left: 20px;
+}
+
+.teacherInfo h2 {
+    font-size: 24px;
+    color: #ff6500;
+}
+
+.teacherInfo p {
+    font-size: 14px;
+    color: #999;
+}
+
+.teacherInfo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.teacherInfo li {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .imageForm {
+        width: 60%;
+    }
+
+    .teachersHeader h1 {
+        font-size: 28px;
+    }
+
+    .cardContainer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imageForm {
+        width: 100%;
+    }
+
+    .teachersHeader h1 {
+        font-size: 24px;
+    }
+
+    .cardContainer {
+        padding: 10px;
+    }
+
+    .teacherImage img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .teacherInfo h2 {
+        font-size: 20px;
+    }
+
+    .teacherInfo p,
+    .teacherInfo li {
+        font-size: 13px;
+    }
+}

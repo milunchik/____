@@ -1,0 +1,152 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.minHScreen {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 800px;
+    max-width: 90%;
+    height: auto;
+}
+
+.imageSection {
+    flex: 1;
+}
+
+.imageSection img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contentSection {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.contentSection h1 {
+    color: var(--primary-color);
+    font-size: 36px;
+    margin: 0;
+}
+
+.contentSection h2 {
+    color: var(--text-color);
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.contentSection p {
+    color: var(--text-color-form);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.editButton {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+}
+
+footer {
+    background-color: var(--secondary-input-color);
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .contentSection h1 {
+        font-size: 28px;
+    }
+
+    .contentSection h2 {
+        font-size: 16px;
+    }
+
+    .contentSection p {
+        font-size: 15px;
+    }
+
+    .editButton {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imageSection img {
+        height: 200px;
+    }
+
+    .contentSection {
+        padding: 15px;
+    }
+
+    .contentSection h1 {
+        font-size: 24px;
+    }
+
+    .contentSection h2 {
+        font-size: 14px;
+    }
+
+    .contentSection p {
+        font-size: 14px;
+    }
+
+    .editButton {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contentSection h1 {
+        font-size: 20px;
+    }
+
+    .contentSection h2 {
+        font-size: 12px;
+    }
+
+    .contentSection p {
+        font-size: 12px;
+    }
+}

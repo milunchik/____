@@ -1,0 +1,105 @@
+.TextContainer {
+    padding: 20px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    text-align: center;
+}
+
+.mainElement {
+    margin-bottom: 40px;
+}
+
+.featuresContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.featureBox,
+.featureBoxPurple {
+    background-color: var(--background-color-main-details);
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    color: var(--secondary-color);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.featureBox {
+    background-color: var(--secondary-color);
+}
+
+.featureBox img,
+.featureBoxPurple img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.featureBox h1,
+.featureBoxPurple h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.featureBox p,
+.featureBoxPurple p {
+    font-size: 16px;
+}
+
+.featureBoxPurple h1 {
+    color: var(--secondary-color);
+}
+
+.featureBox p {
+    color: var(--text-color);
+}
+
+.whySchool {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .featureBox,
+    .featureBoxPurple {
+        width: 100%;
+        height: auto;
+    }
+
+    .featuresContainer {
+        gap: 10px;
+    }
+
+    .featureBox h1,
+    .featureBoxPurple h1 {
+        font-size: 20px;
+    }
+
+    .featureBox p,
+    .featureBoxPurple p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .TextContainer {
+        padding: 15px;
+    }
+
+    .mainElement {
+        margin-bottom: 20px;
+    }
+
+    .featureBox h1,
+    .featureBoxPurple h1 {
+        font-size: 18px;
+    }
+
+    .featureBox p,
+    .featureBoxPurple p {
+        font-size: 12px;
+    }
+}

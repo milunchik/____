@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.homeSection {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-text-color);
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.communicationSkills h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.communicationSkills span {
+    color: var(--primary-color);
+}
+
+.communicationSkills p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.findTeacherBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 75px;
+}
+
+.findTeacherBtn:hover {
+    background-color: var(--button-color-hover);
+}
+
+.quest {
+    padding: 50px;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.imageForm {
+    width: 50%;
+    height: auto;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .imageContainer {
+        display: none;
+    }
+
+    .findTeacherBtn {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .communicationSkills h1 {
+        font-size: 36px;
+    }
+
+    .communicationSkills p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .communicationSkills h1 {
+        font-size: 28px;
+    }
+
+    .communicationSkills p {
+        font-size: 14px;
+    }
+
+    .findTeacherBtn {
+        padding: 8px 16px;
+    }
+}

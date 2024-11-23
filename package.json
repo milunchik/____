@@ -1,0 +1,23 @@
+{
+  "name": "veil",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hremily/veil.git"
+  },
+  "author": "milunchik <emili061116@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "file-loader": "^6.2.0",
+    "husky": "^9.1.6"
+  },
+  "scripts": {
+    "start:server": "cd server && npm run start:dev",
+    "start:client": "cd client && npm run start:dev",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "test": "echo \"No tests available\"",
+    "prepare": "husky install"
+  }
+}

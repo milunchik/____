@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-image: url('../../../public/images/bubbles.png');
+    background-size: cover;
+    height: 100vh;
+    overflow-y: auto;
+    flex-direction: row;
+}
+
+.mainContent .left {
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.mainContent .left h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+.mainContent .left h2 span {
+    background-color: var(--background-color-main-details);
+    padding: 0 5px;
+}
+
+.mainContent .left .cost {
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.mainContent .left .cost .old-price {
+    text-decoration: line-through;
+    color: var(--text-color-form);
+}
+
+.mainContent .left .cost .new-price {
+    font-size: 32px;
+    color: #d32f2f;
+}
+
+.mainContent .left .consultation-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--secondary-button-color);
+    color: var(--secondary-colorcolor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.mainContent .right {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.subjectContainer {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* приховує вертикальну смугу прокрутки в Firefox */
+}
+
+.subjectContainer::-webkit-scrollbar {
+    display: none; /* приховує вертикальну смугу прокрутки в Chrome, Safari та Edge */
+}
+
+.mainContent .right .subject {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    width: 100%;
+    height: 80px;
+    transition: all 0.3s ease;
+}
+
+.mainContent .right .subject span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ffeb3b;
+    color: #000;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.mainContent .right .subject:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
+}
+
+a {
+    color: var(--background-link);
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .mainContent {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .mainContent .left {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .mainContent .right {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainContent .left h2 {
+        font-size: 20px;
+    }
+
+    .mainContent .left .cost {
+        font-size: 16px;
+    }
+
+    .mainContent .left .cost .new-price {
+        font-size: 28px;
+    }
+
+    .mainContent .left .consultation-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .mainContent .right .subject {
+        height: 70px;
+        padding: 15px;
+    }
+
+    .mainContent .right .subject span {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .descriptionImg {
+        display: none;
+    }
+
+    .mainContent .left h2 {
+        font-size: 18px;
+    }
+
+    .mainContent .left .cost {
+        font-size: 14px;
+    }
+
+    .mainContent .left .cost .new-price {
+        font-size: 24px;
+    }
+
+    .mainContent .left .consultation-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .mainContent .right .subject {
+        height: 60px;
+        padding: 10px;
+    }
+
+    .mainContent .right .subject span {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+}

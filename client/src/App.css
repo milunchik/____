@@ -1,0 +1,40 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
+}
+
+:root {
+    --primary-color: #ba68c8;
+    --secondary-color: #ffffff;
+    --text-color-form: #999999;
+    --background-color: #eaeaea;
+    --button-color: #d632ff;
+    --secondary-button-color: #f0b6ff;
+    --button-color-hover: #921faf;
+    --input-color: #f9f9f9;
+    --secondary-input-color: #f1f1f1;
+    --footer-background: #a95cb8;
+    --footer-icons-hover: #f0e68c;
+    --text-color: #000000;
+    --secondary-text-color: #333;
+    --elements: #ba68c844;
+    --green-details: #29bc63;
+    --teacher-title: #ff4500;
+    --background-link: #e75fff;
+    --background-link-hover: #9c3fac;
+    --background-color-main-details: #dca0f8;
+    --userInfo: #8b3999;
+    --background-icons: #9b59b6;
+    --background-dark-color: #553a59;
+}
+
+.signUpContainer {
+    color: var(--primary-color);
+}

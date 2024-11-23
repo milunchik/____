@@ -1,0 +1,109 @@
+.modal {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 0 5px;
+    width: 100px;
+    top: 90px;
+    right: 20px;
+    background-color: var(--secondary-color);
+}
+
+.modalСontent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+}
+
+.close {
+    color: var(--secondary-color);
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0;
+}
+
+ul li {
+    margin: 1px 0;
+    font-size: 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 0 10px 0;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.modalLink {
+    background-color: var(--secondary-color);
+    padding: 2px;
+    color: var(--text-color);
+}
+
+.dark-theme {
+    --secondary-color: #eaeaea;
+    --background-color: #553a59;
+}
+
+.light-theme {
+    --secondary-color: #ffffff;
+    --background-color: #eaeaea;
+}
+
+.imageContainerModal {
+    /* width: auto; */
+    margin: 0 5px 0 0;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+.imageContainerModal img{
+    width: 30%;
+    height: 30%;
+
+}
+.imageContainerModal p {
+    margin: 0 7px;
+}
+
+@media (max-width: 768px) {
+    .modal {
+        width: 80%;
+        top: 50px;
+        right: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    ul li {
+        font-size: 14px;
+    }
+
+    .close {
+        font-size: 16px;
+    }
+}

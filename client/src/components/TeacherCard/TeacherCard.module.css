@@ -1,0 +1,66 @@
+.teacherCard {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    width: 150%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.teacherImage {
+    margin-right: 20px;
+}
+
+.teacherImage img {
+    border-radius: 15%;
+    width: 220px;
+    height: 200px;
+}
+
+.teacherInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.teacherHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.teacherInfo h2 {
+    font-size: 24px;
+    color: #ff6500;
+    margin: 0;
+}
+
+.teacherInfo p {
+    font-size: 14px;
+    color: #999;
+    margin: 10px 0;
+}
+
+.teacherInfo ul {
+    justify-content: left;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.teacherInfo li {
+    font-size: 16px;
+    color: #333;
+}
